@@ -14,7 +14,7 @@
 <html lang="en">
 
   <head>
-
+	
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -41,15 +41,14 @@
     <!-- Navigation -->
     <%@include file="./shared/navbar.jsp" %>
     
+    
+    <div class="content">
     <!-- Page Content -->
     <c:if test="${userClickHome == true }">
-        	<%@include file="./shared/home.jsp" %>
+        	<%@include file="./home.jsp" %>
     </c:if>
-    <!-- /.container -->
-    
-     <!-- Page Content -->
      
-     <div class="content">
+     
 	     
 	    <c:if test="${userClickAbout == true }">
 	        	<%@include file="about.jsp" %>
@@ -58,6 +57,10 @@
 	     <!-- Page Content -->
 	    <c:if test="${userClickContact == true }">
 	        	<%@include file="contact.jsp" %>
+	    </c:if>
+	    
+	    <c:if test="${userClickAllProducts or userClickCategoryProducts == true }">
+	        	<%@include file="listProducts.jsp" %>
 	    </c:if>
 		
 		</div>

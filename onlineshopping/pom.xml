@@ -13,7 +13,14 @@
   </properties>
   <dependencies>
   	
+  	<!-- link backend projects -->
   	
+  	<dependency>
+		<groupId>net.kzn</groupId>
+		  <artifactId>shoppingbackend</artifactId>
+		  <version>0.0.1-SNAPSHOT</version>
+  	
+  	</dependency>
  
   	
   	<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
